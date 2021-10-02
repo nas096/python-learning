@@ -33,6 +33,7 @@ class Employee:
 
 
 emp_1 = Employee("John", "Smith")
+print(emp_1.first)
 
 # The problem is that if we want to change the first name, the email
 # is also changed but with the original method, we can't do that.
@@ -41,6 +42,7 @@ emp_1 = Employee("John", "Smith")
 # allow us to define a method but we can access it like an attributes.
 
 emp_1.first = "Jim"
+print(emp_1.email)
 
 emp_1.fullname = "Khoi Nguyen"
 
